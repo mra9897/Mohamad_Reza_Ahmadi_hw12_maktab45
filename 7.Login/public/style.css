@@ -1,0 +1,63 @@
+@font-face{
+    font-family: Vazir;
+    src: url(Vazir-Medium-FD-WOL.woff);
+}
+*{
+    font-family: Vazir;
+    direction: rtl;
+}
+body{
+    background: url("earth.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+a{
+    color: #2980b9;
+    text-decoration: none;
+}
+.card{
+    width: 400px;
+    margin: 200px auto;
+    padding: 50px 40px;
+    color: #ecf0f1;
+    background-color: rgb(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+.title{
+    text-align: center;
+    margin: 15px;
+}
+.container {
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.require{
+    color: orangered;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 15px;
+}
+i{
+    background-color: #7f8c8d;
+    color: #ecf0f1;
+    padding: 10px;
+    border: 1px solid #ecf0f1; 
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+input[type=button]{
+    background-color: #28a745;
+    color: #ecf0f1;
+    border-radius: 5px;
+    margin-top: 15px;
+}
