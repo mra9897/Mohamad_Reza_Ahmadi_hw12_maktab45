@@ -34,17 +34,11 @@ http.createServer((req, res) => {
                     const db = JSON.parse(data);
                     const user = db.find(v => v.username === body.username && v.password === body.password);
                     if (user !== undefined)
-                        res.write(JSON.stringify({'result': 1}));
+                        res.write(JSON.stringify({'result': 1, 'status':200}));
                     else
-                        res.write(JSON.stringify({'result': 0}));
+                        res.write(JSON.stringify({'result': 0, 'status':404}));
                     res.end();
                 }));
-                // const db = JSON.parse(fs.readFileSync(path + "data/user.json", "utf-8"));
-                // if (db.includes(v => v.username === body.username && v.password === body.password))
-                //     res.write({'result': 1});
-                // else
-                //     res.write({'result': 0});
-                // res.end();
             });
             break;
     }

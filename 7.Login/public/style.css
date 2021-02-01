@@ -45,7 +45,7 @@ input{
     border-bottom-left-radius: 5px;
     font-size: 15px;
 }
-i{
+.container i{
     background-color: #7f8c8d;
     color: #ecf0f1;
     padding: 10px;
@@ -60,4 +60,29 @@ input[type=button]{
     color: #ecf0f1;
     border-radius: 5px;
     margin-top: 15px;
+}
+.d-flex {
+    justify-content: center;
+    position: relative;
+    z-index: 992;
+}
+.alert {
+    display: none;
+    min-width: 150px;
+    padding: 7px 10px;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    border-radius: 3px;
+    border: 2px solid;
+}
+.alert-success{
+    border-color: #218c74;
+    background-color: #9cf1dc;
+    color: #218c74;
+}
+.alert-fail{
+    border-color: #b33939;
+    background-color: #e1a5a8;
+    color: #b33939;
 }
